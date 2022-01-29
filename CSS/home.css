@@ -1,0 +1,76 @@
+body,html { 
+    width: devicewidth;
+  height: deviceheight;
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #128c7e;
+  
+ background: white; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin:0px;
+  list-style: none;
+
+}
+button{
+ 
+  background-color: #128c7e;   
+       width: 40%;  
+        color:white;   
+        padding: 15px;      
+        border: none;   
+        font-size: 20px;
+        cursor: pointer; 
+}
+
+.heading{
+    float: center;
+    color:black;
+    text-align: center;
+    padding: 10px ;
+    margin-top: 40px ;
+    text-decoration: none;
+    font-size: 40px;
+    list-style: none;
+  } 
+  
+a{
+    text-decoration: none;
+    color:aliceblue;
+    width:100%;
+    display:block;
+    font-size: 25px;
+    margin:0 px;
+    box-sizing: border-box;
+    padding:15px;
+    list-style: none;
+}
+
+
+
+.container2 {
+  background: white no-repeat center center fixed; 
+  max-width: 50rem;
+  margin: 2rem auto;
+  /*padding-bottom: 2rem;*/
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+}
+
+.btn-group button {
+    background-color: #128c7e; /* Green background */
+    border: 1px solid #128c7e; /* Green border */
+    color: white; /* White text */
+    font-size: 20px;
+
+    border-radius: 15px;
+    padding: 20px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 40%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    margin: 20px;
+    margin-left: 400px;
+  }
+  
