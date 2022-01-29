@@ -14,33 +14,34 @@
   <body style="background-color: white;">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="padding: 0px;background-color: #128c7e;">
         <div class="container" style="background-color: #128c7e;">
-          <a class="navbar-brand" href="#page-top" style="font-family: Montserrat;background-color: #128c7e;overflow: hidden;">&nbsp; TRD&nbsp; Mumbai Divison
+          <a class="navbar-brand" href="#page-top" style="font-family: Montserrat;background-color:#128c7e;overflow: hidden;">&nbsp; TRD&nbsp; Mumbai Divison
           </a>
           <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background: #128c7e;">
             <i class="fa fa-bars"></i>
           </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="upload.html">Upload Files</a></li>
                     <li class="nav-item"><a class="nav-link" href="addUser.html">Add User</a></li>
-                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>                
-                    <li class="nav-item"><a class="nav-link" href="login.html">Log Out</a></li>                  
-              </ul>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log Out</a></li>                
+                </ul>
             </div>
         </div>
     </nav>
 
     
-    <p class="heading" >UPLOAD FILE</p>
-
-    <div class="row2" >
+    <p class="heading">UPLOAD FILE</p>
+    
+    <div class="row2">
       <div id="filesubmit">
         <header id="text-center col-12"></header>
-        <input id="selected-files" onclick="filesAreSelected()" type="file" class="file-select" accept="application/pdf" multiple style="width: 70%;font-size: 0.8em;"/>
+        <input id="selected-files" onclick="filesAreSelected()" type="file" class="file-select" accept="application/pdf" multiple style="background:white;width: 70%;font-size: 0.8em;"/>
         <br>
         <br>
-        <label for="selected-folder" >Choose Department:</label>
-        <select name="selected-folder" id="selected-folder" style="cursor: pointer;">
+        <label for="selected-folder" >Choose Branch:</label>
+        <select name="selected-folder" id="selected-folder" style="cursor: pointer;" width="15px">
           <option value="ACTM">ACTM</option>
           <option value="Implantation">Implantation</option>
           <option value="SMI 44">SMI 44</option>
@@ -58,7 +59,7 @@
         <div id="noFileSelected" style="font-size: 1em;"></div>
       </div>
     </div>
-
+  
     <div class="grid-container">
         <div id="myProgressBars" class="grid-child bars"></div>
         <div id="progressFileNames" class="grid-child names"></div>
