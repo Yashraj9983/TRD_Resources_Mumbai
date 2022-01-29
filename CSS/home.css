@@ -13,17 +13,16 @@ body,html {
   list-style: none;
 
 }
-button{
- 
-  background-color: #128c7e;   
-       width: 40%;  
+#myButton {   
+       background-color: #128c7e;   
+       width: 70%;  
         color:white;   
-        padding: 15px;      
+        padding: 15px;   
+        margin: 10px 0px;   
         border: none;   
-        font-size: 20px;
-        cursor: pointer; 
-}
-
+        cursor: pointer;   
+        border-radius: 15px;
+         } 
 .heading{
     float: center;
     color:black;
@@ -35,31 +34,19 @@ button{
     list-style: none;
   } 
   
-a{
-    text-decoration: none;
-    color:aliceblue;
-    width:100%;
-    display:block;
-    font-size: 25px;
-    margin:0 px;
-    box-sizing: border-box;
-    padding:15px;
-    list-style: none;
-}
-
 
 
 .container2 {
-  background: white no-repeat center center fixed; 
-  max-width: 50rem;
-  margin: 2rem auto;
-  /*padding-bottom: 2rem;*/
-  -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
-  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  float: center;
+  text-align: center;        
+  margin-left: 10%;
+  margin-right: 10%;
+  padding:20px;   
+  background-color: white;  
+  border: 2px solid black; 
 }
 
-.btn-group button {
+.btn-group2 button {
     background-color: #128c7e; /* Green background */
     border: 1px solid #128c7e; /* Green border */
     color: white; /* White text */
@@ -71,6 +58,6 @@ a{
     width: 40%; /* Set a width if needed */
     display: block; /* Make the buttons appear below each other */
     margin: 20px;
-    margin-left: 400px;
+    
   }
   
