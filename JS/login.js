@@ -1,5 +1,8 @@
 // Set the configuration for your app
 // TODO: Replace with your project's config object
+
+sessionStorage.clear();
+
 var config = {
     apiKey: "AIzaSyDnStfRyi45PQg_0fWbXSBDA0Kd0V6BS-k",
     authDomain: "pdf-db-8e1a7.firebaseapp.com",

@@ -3,7 +3,7 @@ html {
   width: devicewidth;
   height: deviceheight;
   font-family: 'Montserrat', sans-serif;
-  background: rgb(67, 40, 218) no-repeat center center fixed; 
+  background: white no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,7 +12,7 @@ html {
 .row2{
   margin-left: 10%;
   margin-right: 10%;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px ;
   text-decoration: none;
@@ -23,7 +23,7 @@ html {
 
 .heading{
   float: center;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 10px ;
   margin-top: 40px ;
@@ -32,7 +32,7 @@ html {
 } 
 
 #submitButton {   
-       background-color: rgb(37, 20, 168);   
+       background-color: #128c7e;   
        width: 70%;  
         color: white;   
         padding: 15px;   
