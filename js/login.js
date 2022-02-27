@@ -36,8 +36,9 @@ function checkUserData() {
                         document.getElementById('password').value = "";
                         document.getElementById('success').style.color = "black";    
                         document.getElementById('success').innerHTML = "Logged in successfully";
-                        location.href = "https://www.dropbox.com/oauth2/authorize?client_id=dcamc2ab1vgb4ym&redirect_uri="+"https://yashraj9983.github.io/TRD_Resources_Mumbai/home.html"+"&response_type=token"
-                        // location.href="home.html#access_token=sl.BC2j3lcFNKpJekiTa7u--RBQet6skhVhT-Ft4Dt7tuO72W5VqVyEPwHu-UjK9VN6iJX5XjcwMNCU9OhEtlD-TxK1b9zcB_-HxDNL1RjZ2Y_Z-YRjI0JnbIAn6HmirPENhuN5ZxNd&token_type=bearer&expires_in=14400&scope=account_info.read+file_requests.read+file_requests.write+files.content.write+files.metadata.read+files.metadata.write+sharing.read+sharing.write&uid=1142789793&account_id=dbid%3AAABP9RIVqRjjnfuPWpsNEZZgzK6OG6iTmac "
+                        // location.href = "https://www.dropbox.com/oauth2/authorize?client_id=dcamc2ab1vgb4ym&redirect_uri="+"https://yashraj9983.github.io/TRD_Resources_Mumbai/home.html"+"&response_type=token"
+                        // location.href="home.html#access_token="+""+"&token_type=bearer&expires_in=14400&scope=account_info.read+file_requests.read+file_requests.write+files.content.write+files.metadata.read+files.metadata.write+sharing.read+sharing.write&uid=1142789793&account_id=dbid%3AAABP9RIVqRjjnfuPWpsNEZZgzK6OG6iTmac "
+                        location.href="home.html"
                     }   
                     else{
                         document.getElementById('success').innerHTML = "Wrong Password";    

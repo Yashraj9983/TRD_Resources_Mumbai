@@ -2,8 +2,9 @@
 // Set the configuration for your app
 // TODO: Replace with your app's config object
 const UPLOAD_FILE_SIZE_LIMIT = 150 * 1024 * 1024;
-var ACCESS_TOKEN=sessionStorage.getItem('access_token');
-var dbx = new Dropbox.Dropbox({ accessToken: ACCESS_TOKEN });
+// var ACCESS_TOKEN=sessionStorage.getItem('access_token');
+var ACCESS_TOKEN=""
+
 
 var firebaseConfig = {
   apiKey: "AIzaSyDnStfRyi45PQg_0fWbXSBDA0Kd0V6BS-k",
@@ -25,6 +26,13 @@ firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 var databaseRef = database.ref().child("uploadedPDFdropBox");
 
+var ref=firebase.database().ref().child('AdminAccessToken');
+    ref.once("value").then(function(snapshot) {                  
+                putAccessToken(snapshot.val());
+            });
+
+console.log("accessToken="+ACCESS_TOKEN);    
+var dbx="";
 var metadata = {
   contentType: 'application/pdf'
 };
@@ -33,6 +41,12 @@ var uploadedCounter=0;
 const inputElement = document.getElementById("selected-files");
 inputElement.addEventListener("change", handleFiles, false);
 var fileList="";
+
+function putAccessToken(token){
+  ACCESS_TOKEN=token;
+  console.log("accessToken="+ACCESS_TOKEN);    
+  dbx = new Dropbox.Dropbox({ accessToken: ACCESS_TOKEN });
+}
 
 function filesAreSelected(){
   document.getElementById('noFileSelected').innerHTML="";  
