@@ -247,6 +247,7 @@ function disableElements(){
   document.getElementById('mainNav').style.pointerEvents="none";
   document.getElementById('mainNav').style.cursor="default";
   document.getElementById('submitButton').disabled=true;
+  document.getElementById('datePick').disabled=true;
   document.getElementById('submitButton').style.opacity=0.7;
   document.getElementById('submitButton').style.cursor="default";
   document.getElementById('selected-folder').disabled=true;
@@ -262,5 +263,6 @@ function enableElements(){
   document.getElementById('selected-folder').disabled=false;
   document.getElementById('selected-files').disabled=false;
   document.getElementById('selected-files').value = "";
+  document.getElementById('datePick').disabled=false;
   document.getElementById('noFileSelected').innerHTML="Files Uploaded Successfully";
 }
