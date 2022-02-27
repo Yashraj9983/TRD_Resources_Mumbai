@@ -36,7 +36,7 @@ function checkUserData() {
                         document.getElementById('password').value = "";
                         document.getElementById('success').style.color = "black";    
                         document.getElementById('success').innerHTML = "Logged in successfully";
-                        location.href = "home.html"
+                        location.href = "https://www.dropbox.com/oauth2/authorize?client_id=dcamc2ab1vgb4ym&redirect_uri="+"https://yashraj9983.github.io/TRD_Resources_Mumbai/home.html"+"&response_type=token"
                     }
                     else{
                         document.getElementById('success').innerHTML = "Wrong Password";    
